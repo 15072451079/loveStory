@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>全哥和竹仪~</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<!--link href="css/style.css" rel="stylesheet" type="text/css"-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<audio src="css/xintiao.MP3" autoplay="autoplay"></audio>
+	<div id="mainDiv">
+		<div id="content" style="height:500px;">
+			<div id="code">
+				<span class="comments">/** 来自于程序媛女朋友给wuli全哥的表白，小哥哥七夕快乐呀......</span><br />
+				<span class="space"/><span class="comments">* 前排表白全哥，日为朝，月为暮，卿为朝朝暮暮。</span><br />
+				<span class="space"/><span class="comments">* 今天是我们在一起的第XX天来着呀？给全哥留个思考题，答不出来，我不仅会生猴子，还会生气的。</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy d = <span class="keyword">new</span> Boy(<span class="string">"邓全"</span>);<br />
+				Girl z = <span class="keyword">new</span> Girl(<span class="string">"张竹仪"</span>);<br />
+				<span class="comments">2018年3月14日，外面的风还有点冷，可是全哥的怀抱真的很温暖。 </span><br />
+				<br />
+				<span class="comments">When the worlds "I love you " were said by you for the first time,my world blossoms</span><br />
+				<br />
+				<span class="comments">我们一起走过的这些时光，你的手拉起了又放下，又再次的拉起，而我想告诉你诗经中的那一句</span><br />
+				你猜是那一句呀？<br />
+				<span class="comments">和你走过的这段时间，你就像一张磨砂纸，而我像一个有尖锐棱角的石头，陪我成长了这么多</span><br />
+				谢谢侬<br />
+				<span class="comments">在心里记下了很多，每次的每次，吃饭总是记得我的口味，出门总是护着我周全，半夜醒来会抱着我...</span><br />
+				<span class="comments">你说我聪明又笨，即使是有七窍玲珑心，有时候面对你，也只有转不过弯来气的只会瞪着眼睛想打你</span><br />
+				<!--span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br /-->
+				<span class="comments">很多话，写了又删，删了又重新写，仔细思量过后用键盘敲下来，却又觉得多余了</span><br />
+				<span class="placeholder">冷冷清清的时刻，我也会反思我自己，有点唠叨，有点磨人，还有点焦躁</span><br />
+				<span class="placeholder"/>做事情总是把握不好分寸感，欠缺考虑脾气也还那么不好<br />
+				<span class="placeholder"/>每次的争吵闹别扭了都会有点后悔，一切能重来就好了<br />
+				<span class="placeholder"/>其实我一直都知道，这么久了，你包容了我很多<br />
+				<span class="placeholder"/>谢谢你看到我这么多缺点依然爱着我</br>
+				<span class="placeholder"/>很庆幸，那些别扭的时光，咱们都一步步的走过来了<br />
+				<span class="placeholder"/>我们的路还有很长很长，还没如愿见到不朽，我不想把你先弄丢。<br />
+				<br />
+				<span class="comments">我有时候也会追我自己我想要怎样的以后，以前总是很心急，想要把一切安排好<br />
+				而渐渐发现，路在脚下，只能一步步的去走
+				<br />
+				短暂的小别离，希望我们能创造出更好的相遇
+				<br />
+				</span>
+				<span class="keyword">我在远方，惜君如常，别来无恙，你在心上~</span><br />
+				<span class="keyword">稍等片刻，下拉有惊喜~</span><br/>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						
+						<!--div id="elapseClock"></div-->
+					</div>
+					<div id="loveu">
+						<br/>
+						<div class="signature"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img" id="img">
+			<img src="imgs/01.jpg"/>
+			<img src="imgs/02.jpg"/>
+			<img src="imgs/03.jpg"/>
+			<img src="imgs/04.jpg"/>
+			<img src="imgs/05.jpg"/>
+			<img src="imgs/06.jpg"/>
+			<img src="imgs/07.jpg"/>
+			<img src="imgs/08.jpg"/>
+			<img src="imgs/09.jpg"/>
+			<img src="imgs/10.jpg"/>
+			<img src="imgs/11.jpg"/>
+			<img src="imgs/12.jpg"/>
+			<img src="imgs/13.jpg"/>
+		</div>
+		<p>总之总之，相爱不易，想跟你一直一直的相守走下去！！！</p>
+
+	</div>
+	<script src="js/slider.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		(function () {
+			setTimeout(function(){
+				document.getElementById('img').style.display='block';
+			},90000);
+			
+		})()
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2010, 10, 2);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
