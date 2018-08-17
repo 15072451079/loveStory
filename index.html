@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<audio src="css/xintiao.MP3" autoplay="autoplay"></audio>
+	<audio src="css/xintiao.MP3" autoplay="autoplay" id="xintiao"></audio>
 	<div id="mainDiv">
 		<div id="content" style="height:500px;">
 			<div id="code">
@@ -96,6 +96,16 @@
 			setTimeout(function(){
 				document.getElementById('img').style.display='block';
 			},90000);
+			document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('xintiao');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
 			
 		})()
 		var offsetX = $("#loveHeart").width() / 2;
