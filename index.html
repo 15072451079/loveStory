@@ -18,7 +18,8 @@
 </head>
 
 <body>
-	<audio src="css/xintiao.MP3" autoplay="autoplay" id="xintiao"></audio>
+		<audio loop src="css/xintiao.MP3" id="audio" autoplay preload="auto">该浏览器不支持audio属性</audio>
+	<!--audio " autoplay="autoplay"></audio-->
 	<div id="mainDiv">
 		<div id="content" style="height:500px;">
 			<div id="code">
@@ -97,15 +98,23 @@
 				document.getElementById('img').style.display='block';
 			},90000);
 			document.addEventListener('DOMContentLoaded', function () {
-    function audioAutoPlay() {
-        var audio = document.getElementById('xintiao');
-            audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-        }, false);
-    }
-    audioAutoPlay();
-});
+			function audioAutoPlay() {
+				var audio = document.getElementById('audio');
+					audio.play();
+				document.addEventListener("WeixinJSBridgeReady", function () {
+					audio.play();
+				}, false);
+			}
+			audioAutoPlay();
+		});
+		//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+		document.addEventListener('touchstart', function () {
+			function audioAutoPlay() {
+				var audio = document.getElementById('audio');
+					audio.play();
+			}
+			audioAutoPlay();
+		});
 			
 		})()
 		var offsetX = $("#loveHeart").width() / 2;
